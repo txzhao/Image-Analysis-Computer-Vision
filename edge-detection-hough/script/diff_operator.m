@@ -1,10 +1,18 @@
 tools = few256;
+
+% simple difference operator
 sdo_x = [-1 0 1];
 sdo_y = sdo_x';
+
+% central difference operator
 cdo_x = [-0.5 0 0.5];
 cdo_y = cdo_x';
+
+% roberts operator
 roberts_pos_dig = [-1 0; 0 1];
 roberts_neg_dig = [0 -1; 1 0];
+
+% sobel operator
 sobel_x = [-1 -2 -1; 0 0 0; 1 2 1];
 sobel_y = [-1 0 1; -2 0 2; -1 0 1];
 sobel_pos_dig = [0 1 2; -1 0 1; -2 -1 0];
