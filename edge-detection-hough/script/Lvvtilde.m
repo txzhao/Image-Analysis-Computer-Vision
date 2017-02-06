@@ -3,6 +3,7 @@ if (nargin < 2)
     shape = 'same';
 end
 
+% define simple difference operator
 dx = [0 0 0 0 0; 0 0 0 0 0; 0 -0.5 0 0.5 0; 0 0 0 0 0; 0 0 0 0 0];
 dy = dx';
 dxx = [0 0 0 0 0; 0 0 0 0 0; 0 1 -2 1 0; 0 0 0 0 0; 0 0 0 0 0];
