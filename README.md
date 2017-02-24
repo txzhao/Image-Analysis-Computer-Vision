@@ -2,7 +2,7 @@
 
 lab 1: filtering operations
 * properties of Fourier transform
-* smoothing filter
+* smoothing filters
 
 lab 2: edge detection & Hough transform
 * differential geometry based edge detection
