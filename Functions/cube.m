@@ -11,16 +11,16 @@ end
 object.point = zeros(4, 8);
 
 % The points on the bottom surface
-object.point(:,1) = [-2,  2, -2, 1]';
-object.point(:,2) = [ 2,  2, -2, 1]';
-object.point(:,3) = [-2, -2, -2, 1]';
-object.point(:,4) = [ 2, -2, -2, 1]';
+object.point(:, 1) = [-2, 2, -2, 1]';
+object.point(:, 2) = [ 2, 2, -2, 1]';
+object.point(:, 3) = [-2, -2, -2, 1]';
+object.point(:, 4) = [ 2, -2, -2, 1]';
 
 % The points on the top surface
-object.point(:,5) = [-2,  2,  2, 1]';
-object.point(:,6) = [ 2,  2,  2, 1]';
-object.point(:,7) = [-2, -2,  2, 1]';
-object.point(:,8) = [ 2, -2,  2, 1]';
+object.point(:, 5) = [-2, 2, 2, 1]';
+object.point(:, 6) = [ 2, 2, 2, 1]';
+object.point(:, 7) = [-2, -2, 2, 1]';
+object.point(:, 8) = [ 2, -2, 2, 1]';
 
 % Container for lines
 object.line = zeros(2, 12);
@@ -39,9 +39,9 @@ object.line(:, 8) = [4, 8]';
 
 % The lines on the top surface
 object.line(:, 9) = [5, 6]';
-object.line(:,10) = [6, 8]';
-object.line(:,11) = [8, 7]';
-object.line(:,12) = [7, 5]';
+object.line(:, 10) = [6, 8]';
+object.line(:, 11) = [8, 7]';
+object.line(:, 12) = [7, 5]';
 
 if (depth <= 0.0)
   out.point = object.point;
