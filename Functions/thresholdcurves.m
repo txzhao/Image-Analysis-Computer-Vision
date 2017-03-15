@@ -35,10 +35,10 @@ while trypointer <= insize,
           tmpcurves(1, outpointer) = levelvalue;
           tmpcurves(2, outpointer) = remainlength;
 
-          tmpcurves(1, (outpointer+1):(outpointer+remainlength)) = ...
-            incurves(1, inpointer:(inpointer+remainlength-1));
-          tmpcurves(2, (outpointer+1):(outpointer+remainlength)) = ...
-            incurves(2, inpointer:(inpointer+remainlength-1));
+          tmpcurves(1, (outpointer + 1) : (outpointer + remainlength)) = ...
+            incurves(1, inpointer : (inpointer + remainlength - 1));
+          tmpcurves(2, (outpointer + 1) : (outpointer + remainlength)) = ...
+            incurves(2, inpointer : (inpointer + remainlength - 1));
 
           outpointer = outpointer + remainlength + 1;
         end
@@ -57,10 +57,10 @@ while trypointer <= insize,
         tmpcurves(1, outpointer) = levelvalue;
         tmpcurves(2, outpointer) = remainlength;
 
-        tmpcurves(1, (outpointer+1):(outpointer+remainlength)) = ...
-          incurves(1, inpointer:(inpointer+remainlength-1));
-        tmpcurves(2, (outpointer+1):(outpointer+remainlength)) = ...
-          incurves(2, inpointer:(inpointer+remainlength-1));
+        tmpcurves(1, (outpointer + 1) : (outpointer + remainlength)) = ...
+          incurves(1, inpointer : (inpointer + remainlength - 1));
+        tmpcurves(2, (outpointer + 1) : (outpointer + remainlength)) = ...
+          incurves(2, inpointer : (inpointer + remainlength - 1));
 
         outpointer = outpointer + remainlength + 1;
       end
@@ -69,7 +69,7 @@ while trypointer <= insize,
   end
 end
 
-outcurves = tmpcurves(:,1:outpointer-1);
+outcurves = tmpcurves(:, 1 : outpointer - 1);
 
 
 
