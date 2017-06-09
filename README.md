@@ -1,4 +1,4 @@
-# ImageAnalysisComputerVision
+# Image-Analysis-Computer-Vision
 
 lab 1: filtering operations
 * properties of Fourier transform
